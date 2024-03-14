@@ -48,7 +48,7 @@ internal class Program
         }
         else if (a == "Paprika")
         {
-            string buah = "Apel";
+            string buah = "Paprika";
             string kode_buah = kodeBuah.getBuah(buah);
             Console.WriteLine($"Kode buah untuk buah {buah} adalah {kode_buah}");
         }

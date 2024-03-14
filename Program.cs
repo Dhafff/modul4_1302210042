@@ -9,8 +9,18 @@ internal class Program
 
         KodeBuah kodeBuah = new KodeBuah();
 
-        Console.WriteLine("Masukan buah yang ingin di cari kodenya: ");
+        Console.WriteLine("========================================================");
+        Console.WriteLine("Selamat datang. Macam-macam buah yang ada di pengecekan:");
+
+        Console.WriteLine();
+        Console.WriteLine("| 1. Apel   | 2. Aprikot | 3. Alpukat    |");
+        Console.WriteLine("| 4. Pisang | 5. Paprika | 6. Blackberry |");
+        Console.WriteLine("| 7. Ceri   | 8. Kelapa  | 9. Jagung     |");
+        Console.WriteLine();
+
+        Console.Write("Masukan buah yang ingin di cari kodenya: ");
         a = Console.ReadLine();
+        Console.WriteLine();
 
         if (a == "Apel")
         {
@@ -23,14 +33,14 @@ internal class Program
             string buah = "Aprikot";
             string kode_buah = kodeBuah.getBuah(buah);
             Console.WriteLine($"Kode buah untuk buah {buah} adalah {kode_buah}");
-        } 
+        }
         else if (a == "Alpukat")
         {
             string buah = "Alpukat";
             string kode_buah = kodeBuah.getBuah(buah);
             Console.WriteLine($"Kode buah untuk buah {buah} adalah {kode_buah}");
         }
-        else if(a == "Pisang")
+        else if (a == "Pisang")
         {
             string buah = "Pisang";
             string kode_buah = kodeBuah.getBuah(buah);
@@ -66,6 +76,12 @@ internal class Program
             string kode_buah = kodeBuah.getBuah(buah);
             Console.WriteLine($"Kode buah untuk buah {buah} adalah {kode_buah}");
         }
+        else
+        {
+            Console.WriteLine("Maaf, buah yang anda cari tidak ada dalam tabel");
+        }
+
+        Console.WriteLine("========================================================");
     }
 }
 
